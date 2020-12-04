@@ -1,0 +1,133 @@
+{
+  "name": "lineker",
+  "productName": "Lineker",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Access links between your devices",
+  "author": {
+    "name": "Felipe Pereira de Souza Silva (Blackoutseeker)",
+    "email": "felipeoriginal.2019@gmail.com",
+    "url": "https://github.com/Blackoutseeker"
+  },
+  "main": "main.js",
+  "homepage": ".",
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "electron-is-dev": "^1.2.0",
+    "electron-squirrel-startup": "^1.0.0",
+    "firebase": "^8.1.1",
+    "qrcode.react": "^1.0.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-indiana-drag-scroll": "^1.8.0",
+    "react-redux": "^7.2.2",
+    "redux": "^4.0.5",
+    "redux-persist": "^6.0.0",
+    "web-vitals": "^0.2.4"
+  },
+  "scripts": {
+    "start": "electron-forge start",
+    "react": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "pack-dist": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^6.0.0-beta.54",
+    "@electron-forge/maker-deb": "^6.0.0-beta.54",
+    "@electron-forge/maker-rpm": "^6.0.0-beta.54",
+    "@electron-forge/maker-squirrel": "^6.0.0-beta.54",
+    "@electron-forge/maker-zip": "^6.0.0-beta.54",
+    "electron": "^10.1.5",
+    "electron-builder": "^22.9.1",
+    "electron-reloader": "^1.1.0"
+  },
+  "config": {
+    "forge": {
+      "packagerConfig": {},
+      "makers": [
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "config": {
+            "name": "lineker"
+          }
+        },
+        {
+          "name": "@electron-forge/maker-zip",
+          "platforms": [
+            "darwin"
+          ]
+        },
+        {
+          "name": "@electron-forge/maker-deb",
+          "config": {}
+        },
+        {
+          "name": "@electron-forge/maker-rpm",
+          "config": {}
+        }
+      ]
+    }
+  },
+  "build": {
+    "appId": "com.lineker.felipstudio",
+    "icon": "assets/Lineker.png",
+    "files": [
+      "dist/**/*",
+      "package.json",
+      "./main.js"
+    ],
+    "directories": {
+      "buildResources": "assets"
+    },
+    "win": {
+      "target": [
+        {
+          "target": "portable"
+        },
+        {
+          "target": "msi"
+        }
+      ]
+    },
+    "portable": {
+      "artifactName": "Lineker.exe"
+    },
+    "mac": {
+      "target": [
+        "zip"
+      ]
+    },
+    "linux": {
+      "target": [
+        "deb",
+        "rpm",
+        "tar.gz"
+      ]
+    }
+  }
+}

@@ -1,0 +1,260 @@
+* {
+  transition: 0.3s;
+}
+body {
+  background-color: #005884;
+}
+main {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+  flex-direction: row;
+}
+.form-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.white-chars {
+  color: #fff;
+}
+.gray-chars {
+  color: #222;
+}
+h1 {
+  cursor: default;
+  font-size: 40px;
+  margin: 6px;
+}
+.logo {
+  width: 180px;
+  height: 180px;
+}
+.description {
+  color: #fff;
+  font-size: 25px;
+  cursor: default;
+  margin-bottom: 8px;
+}
+.input-content {
+  width: 450px;
+  height: 50px;
+  border-radius: 10px;
+  margin: 8px;
+  display: flex;
+  flex-direction: row;
+}
+.input-icon-content {
+  width: 60px;
+  height: 50px;
+  background-color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+#key-content {
+  width: 64px;
+}
+input {
+  width: 100%;
+  height: 38px;
+  border: 5px solid #222;
+  border-left: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-size: 25px;
+  color: #222;
+  font-weight: 900;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+input::placeholder {
+  color: #777;
+}
+#pass-input {
+  padding-right: 45px;
+}
+#password-input-content-down {
+  transform: translateY(38px);
+}
+#eye-content {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  border: none;
+  transform: translate(405px, 7px);
+  cursor: pointer;
+}
+.messages-content {
+  width: 450px;
+  margin: 8px;
+}
+.messages {
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+}
+.messages:hover {
+  text-decoration: underline;
+}
+#forgot-content-up {
+  cursor: default;
+  text-decoration: none;
+}
+#messages-create-account {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#messages-forgot-up {
+  transform: translateY(-66px);
+}
+.sign-button {
+  width: 450px;
+  height: 50px;
+  border: 3px solid #fff;
+  border-radius: 10px;
+  background-color: transparent;
+  margin: 8px;
+  cursor: pointer;
+}
+.sign-button:hover {
+  background-color: #fff;
+}
+.button-text {
+  font-size: 25px;
+  color: #fff;
+}
+.sign-button:hover > .button-text {
+  color: #005884;
+}
+#create-account {
+  font-weight: bold;
+  text-align: center;
+}
+#create-account-dismiss {
+  cursor: default;
+  color: #005884;
+}
+#create-account-dismiss::selection {
+  color: #005884;
+  background-color: transparent;
+}
+.publish-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+}
+.qr-content {
+  width: 115px;
+  height: 115px;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  cursor: none;
+}
+.qr-content:hover {
+  background-color: #fff;
+}
+.dialog-box {
+  position: absolute;
+  top: 80px;
+  width: 250px;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+}
+#show-box {
+  left: 0px;
+}
+#hide-box {
+  left: -255px;
+}
+.dialog-message-content {
+  height: 60px;
+  width: 76%;
+  display: flex;
+  flex-direction: column;
+}
+.dialog-icon-content {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dialog-text-content {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 8px;
+}
+.title {
+  font-weight: 600;
+  cursor: default;
+}
+.title:hover {
+  text-decoration: none;
+}
+.subtitle {
+  font-size: 16px;
+  cursor: default;
+}
+.subtitle:hover {
+  text-decoration: none;
+}
+.error {
+  border-right: 5px solid #6b0404;
+}
+.error-message-content {
+  background-color: #c00;
+}
+.error-icon-content {
+  background-color: #910606;
+}
+.inbox {
+  border-right: 5px solid #002336;
+}
+.inbox-message-content {
+  background-color: #0A80BB;
+}
+.inbox-icon-content {
+  background-color: #003B59;
+}
+.reset {
+  border-right: 5px solid #0a5902;
+}
+.reset-message-content {
+  background-color: #2bbd1a;
+}
+.reset-icon-content {
+  background-color: #0f8003;
+}
+.invalid-content {
+  background-color: #c00;
+}
+.invalid-input {
+  border-color: #c00;
+}

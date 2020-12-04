@@ -1,0 +1,132 @@
+.item-content {
+  width: 100%;
+  max-width: 640px;
+  height: 60px;
+  margin: 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+}
+.item-content:first-child {
+  margin-top: 20px;
+}
+.item-content:last-child {
+  margin-bottom: 20px;
+}
+.boxes-contents {
+  width: 62px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+#qr-boxe {
+  border-right: 2px solid;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+#qr-boxe:hover {
+  background-color: #fff;
+}
+.delete-boxe {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.delete-boxe:hover {
+  background-color: #c00;
+}
+.left-border-boxe {
+  border-left: 2px solid;
+}
+.certificate-content {
+  width: 40px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.link-content {
+  width: 65%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.title-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-x: auto;
+}
+.link-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.url-content {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-x: auto;
+}
+.date-content {
+  width: 100px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.date {
+  font-size: 14px;
+  cursor: default;
+}
+.title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  cursor: default;
+}
+.url {
+  font: 16px;
+  cursor: pointer;
+}
+.url:hover {
+  text-decoration: underline;
+}
+#shorten-item {
+  max-width: 528px;
+}
+#shorten-link {
+  width: 60%;
+}
+.dark-item {
+  background-color: #2c2c2c;
+}
+.light-item {
+  background-color: #003B59;
+}
+.dark-boxes-border {
+  border-color: #121212 !important;
+}
+.light-boxes-border {
+  border-color: #005884 !important;
+}
+#dark-info {
+  color: #999;
+}
+#light-info {
+  color: #6BADCF;
+}
+.dark-boxe-over:hover {
+  background-color: #3d3d3d;
+}
+.light-boxe-over:hover {
+  background-color: #0A80BB;
+}
+.copied {
+  background-color: #2bbd1a !important;
+}
